@@ -30,7 +30,6 @@
   </script>
 
   <template>
-    <h3>Liste des projets</h3>
     <label for="project-select">Sélectionner un projet :</label>
     <select v-model="projetSelectionnee" id="project-select">
       <option v-for="projet in listePr" :key="projet.id" :value="projet">
@@ -39,3 +38,22 @@
     </select>
 
   </template>
+  <style scoped>
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+    background-color: #ffa74d;
+
+  }
+  select {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  div {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  </style>

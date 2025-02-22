@@ -31,8 +31,6 @@ getPersonnes();
 </script>
 
 <template>
-  <h3>Liste des personnes</h3>
-
   <label for="person-select">Sélectionner une personne :</label>
   <select v-model="personneSelectionnee" id="person-select">
     <option v-for="personne in listeP" :key="personne.matricule" :value="personne">
@@ -52,6 +50,7 @@ getPersonnes();
 label {
   font-weight: bold;
   margin-right: 10px;
+  background-color: #ffa74d;
 }
 select {
   padding: 5px;
