@@ -1,4 +1,5 @@
 <template>
+  <ParticipationHeader></ParticipationHeader>
   <div class="container">
     <h2>Ajouter un projet</h2>
     <!-- Un formulaire pour saisir les valeurs du projet à ajouter -->
@@ -40,6 +41,8 @@
 import {onMounted, reactive} from "vue";
 // Importer la fonction doAjaxRequest qui gère les erreurs d'API
 import doAjaxRequest from "@/util/util.js"
+import ProjetForm from "@/components/ProjetForm.vue";
+import ParticipationHeader from "@/components/ParticipationHeader.vue";
 
 // Pour réinitialiser le formulaire
 const projetVide = {
